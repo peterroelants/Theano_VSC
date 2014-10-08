@@ -24,4 +24,11 @@ Install Theano by running:
 
 ## Test Installation
 
-Check correct installing of Theano with GPU support by running check1.py as is [illustrated here](http://deeplearning.net/software/theano/tutorial/using_gpu.html).
+Check correct installing of Theano with GPU support by running `check1.py` as is [illustrated here](http://deeplearning.net/software/theano/tutorial/using_gpu.html).
+
+## Run Theano code on VSC node
+
+To run Theano code on the VSC node make sure to add the following line to you `.theanorc` file (This will use Intel MKL):
+
+    ldflags = -lmkl -lguide -lpthread
+
